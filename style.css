@@ -1,0 +1,49 @@
+body {
+    font: 1em 'PT Sans', Tahoma, Arial;
+}
+
+#wrapper {    
+    margin-top: 200px;
+    perspective: none;   
+}
+
+#cube {    
+    height: 300px;
+    margin: auto;
+    position: relative;
+    transform-origin: 50% 50% -150px;
+    transform-style: preserve-3d;  
+    width: 300px;     
+}
+
+.side {
+    background: rgba(0,0,0,.3);
+    border: 10px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0,0,0,.5);
+    color: #fff;
+    font-size: 5em;
+    height: 300px;
+    line-height: 300px;
+    position: absolute;    
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4);   
+    transform-origin: 50% 50% -150px;
+    width: 300px;
+}
+
+#side2 {
+    transform: rotateY(90deg);
+}
+#side3 {
+    transform: rotateY(-90deg);
+}
+#side4 {
+    transform: rotateX(90deg);
+}
+#side5 {
+    transform: rotateX(-90deg);
+}
+#side6 {
+    transform: rotateY(180deg);
+}
